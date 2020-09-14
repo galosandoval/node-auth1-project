@@ -13,10 +13,6 @@ exports.up = function (knex) {
 
       tbl
         .integer("role")
-        .unsigned()
-        // .references("roles.id")
-        .onDelete("RESTRICT")
-        .onUpdate("CASCADE");
     });
 };
 
